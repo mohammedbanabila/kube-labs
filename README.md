@@ -173,5 +173,6 @@ Local Machine
 
 Note: when you  install  and use  kube-prometheuse-stack  by  helm 
 all outputs that  need to access and get  password  with  present at output_kube_prometheus_stack.txt after all  nodes and pods  along  with cilium status   be  ok  , will  wait 15m = 900s at script
+7- do   load generator  to  pods  for  changes metric  of  hpa 
 
 note:  TO  get  kube-prometheuse-stack  helm chart  go to https://artifacthub.io/ that be usefull 

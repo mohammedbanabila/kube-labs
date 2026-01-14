@@ -26,7 +26,7 @@ sudo rm hubble-linux-${HUBBLE_ARCH}.tar.gz{,.sha256sum}
 
 cilium=$( 
 
-cilium install  --version 1.18.5  --set kubeProxyReplacement=true \
+cilium install  --version 1.18.6  --set kubeProxyReplacement=true \
   --set operator.prometheus.enabled=true \
   --set operator.prometheus.namespace=monitor \
   --set bgpControlPlane.enabled=true \
@@ -82,7 +82,7 @@ echo "update repo : $update_repo"
 
 install_kube_prometheus_stack=$(
   
-helm install kube-prometheus-stack prometheus-community/kube-prometheus-stack --version 80.13.3 -n monitor
+helm install kube-prometheus-stack prometheus-community/kube-prometheus-stack --version 80.14.3 -n monitor
 
 )
 
